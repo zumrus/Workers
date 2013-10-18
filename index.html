@@ -1,0 +1,89 @@
+<HTML>
+ <meta http-equiv="content-type" content="text/html" charset="utf8"> 
+<HEAD>
+
+
+</HEAD>
+<BODY>
+
+<style>
+.Worker{
+  background-color: #cff;
+  width: 330px;
+  margin: 10px;
+  border-radius: 10px; 
+  border-style: solid;
+}
+
+.WorkerAge{
+  width: auto;
+  margin: 30px;
+}
+
+.WorkerDossier{
+  width: auto;
+  margin: 30px;
+}
+
+h1 {
+  font-size: 1.2em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+</style>
+
+  <div id="mysearch">
+
+  </div>
+
+
+  <div id="myapp">
+
+  </div>
+
+<script type="text/javascript" src="jquery-1.10.2.js"></script>
+<script type="text/javascript" src="underscore-min.js"></script>
+<script type="text/javascript" src="backbone-min.js"></script>
+<script type="text/javascript" src="coffee-script.js"></script>
+
+<script type="text/template" id="search-template">
+
+
+<div class="search">
+  <input class="field" id="field-search">    
+  <input type="button" id="search-button" value=" Поиск ">
+</div>
+
+
+</script>
+
+<script type="text/template" id="worker-template">
+
+<div class="WorkerName">
+  <h1><%- attributes.name %></h1>
+</div>
+<div class="WorkerAge">
+  Age: <%- attributes.age %>
+</div>
+<div class="WorkerDossier">
+  Dossier: <%- attributes.dossier %>
+</div>
+
+</script>
+
+<SCRIPT type="text/coffeescript" src="workers.coffee">
+
+</SCRIPT>
+
+
+<style>
+</style>
+
+</BODY>
+</HTML>
+
+
+
